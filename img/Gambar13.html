@@ -1,0 +1,9 @@
+<svg id="interactive-svg" width="200" height="200">
+  <circle id="circle" cx="100" cy="100" r="50" fill="blue" />
+</svg>
+
+<script>
+  document.getElementById("circle").addEventListener("click", function() {
+    this.setAttribute("fill", this.getAttribute("fill") === "blue" ? "red" : "blue");
+  });
+</script>
